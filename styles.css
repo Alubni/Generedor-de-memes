@@ -1,0 +1,222 @@
+ * {
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box;
+
+ }
+ html {
+   height: 100vh;
+   margin: 0px;
+ }
+
+ :root {
+  --color-header: #a1a1a1;
+  --color-aside: #064420;
+  --color-meme: #FDFAF6;
+  --color-txt: #fbfcfa;
+  --mainColorFont: rgb(8, 8, 8);
+  --color-btn-font: #E8EAE6;
+  --color-download-btn: #867AE9;
+  --color-body: #AAAAAA;
+}
+
+body.dark {
+  --color-header: #0b562a; 
+ --color-aside: #FDFAF6;
+ --color-meme: #9b8484;
+ --color-txt: #f7faf4;
+ --mainColorFont:rgb(255, 255, 255);
+ --color-btn-font: rgb(243, 241, 245);
+ --color-download-btn: #150347;
+ --color-body: rgb(41 48 48);
+
+}
+ 
+ body {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+   background-color: var(--color-body);
+   color:var(--mainColorFont)
+  }
+
+
+ .m-header {
+   width: 100vw;
+   height: auto;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   background-color: var(--color-header);
+   color: var(--mainColorFont)
+   
+ }
+
+ h1 {
+   padding: 0.2em;
+ }
+
+ .button-container {
+   display: flex;
+   width: auto;
+   justify-content: space-between;
+   align-items: center;
+
+ }
+
+ .button {
+   display: flex;
+   align-content: space-between;
+   background-color: transparent;
+   border: none;
+   padding: 0.8em;
+
+ }
+
+
+
+ .meme {
+  width: 90vw; 
+  height: 80vh;
+  background-color: var(--colorSectionMeme);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin: 1em;
+  padding: 0.2em;
+ }
+
+
+ .meme-container {
+   background-color: black;
+   width: 30em;
+   max-width: 37.8em;
+   height: 90%;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   position: relative;
+ }
+
+ .meme-image {
+   width: 100%;
+   height: 100%;
+   flex-grow: 1;
+   background-size: cover;
+ }
+
+
+
+ .top-txt,
+ .bottom-txt {
+   width: 100%;
+   max-height: fit-content;
+   background-color: var(--color-txt);
+   font-family: var(--mainFont);
+   font-size: 1.5em;
+   font-weight: bolder;
+   text-align: center;
+   padding: 1em;
+   color:black
+ }
+
+ .download-btn {
+   width: 10em;
+   display: flex;
+   align-items: center;
+   justify-items: center;
+   padding: 0.5em;
+   color: var(--color-btn-font);
+   background-color:var(--color-download-btn);                                 
+   border: none;
+   border-radius: 0.25em; 
+ }
+
+ .btn-bgd {
+   display: flex;
+   flex-direction: row;
+   justify-content: space-evenly;
+ }
+
+ .Img-aside,
+ .txt-aside{
+  position: absolute;
+  top:0;
+  right:0;
+  width: 15.5em;  
+  height: 100vh;
+  display: flex;
+   flex-direction: column;
+   padding: 1em;
+   box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.2);
+   background-color: var(--color-body);
+ }
+
+
+h2{
+  font-size: 1.2em;
+}
+h3{
+  font-size: 1em;
+}
+ .panel-control-input {
+   width: 100%;
+   padding: 0.5em;
+   border: 1px solid #ccc;
+   border-radius: 0.25em;
+   font-size: 1em;
+ }
+ label{
+  display: block;
+  font-size: 0.8em;
+  margin: 0.1em;
+ }
+ input[type="range"]{
+  width: 100%;
+ }
+
+ .font-selection {
+   padding: 0.8em;
+   justify-content: left;
+
+ }
+
+ .font-align {
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   padding: 0.6em;
+   width: 90%;
+   /* Revisar */
+ }
+
+ #font-sz {
+   font-size: 1em;
+   width: 30%;
+ }
+
+ .font-bgd {
+   display: flex;
+   flex-direction: row;
+ }
+
+ .outline-btn {
+   display: flex;
+   justify-content: space-between;
+   margin: 0.5em;
+   height: 2em;
+   width: 80%;
+ }
+
+ .spacing {
+   padding-bottom: 0.6em;
+ }
+.display-none{
+  display:none;
+}
+ 
